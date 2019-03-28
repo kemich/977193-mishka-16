@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Комардеев](https://up.htmlacademy.ru/adaptive/16/user/977193).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Русаков](https://htmlacademy.ru/profile/id6302).
 
 ---
 
