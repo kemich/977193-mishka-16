@@ -2,6 +2,7 @@
   "use strict";
 
   document.querySelector(".contacts__map-img").style.cssText = "display: none;";
+  document.querySelector(".contacts__map-container").style.cssText = "height: 457px;";
 
   ymaps.ready(init);
 
@@ -17,12 +18,20 @@
       .add("zoomControl", {
         left: 5,
         top: 5
-      })
-    myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-      balloonContent: "ул. Большая Конюшенная, д. 19/8, офис 101"
+      });
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'ул. Большая Конюшенная, д. 19/8, офис 101',
+      balloonContent: 'ул. Большая Конюшенная, д. 19/8, офис 101'
     }, {
-      iconImageHref: "img/map-pin.png",
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'http://placehold.it/70x100',
+      // Размеры метки.
       iconImageSize: [70, 100],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
       iconImageOffset: [-35, -100]
     });
     myMap.geoObjects
