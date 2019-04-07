@@ -13,7 +13,6 @@
 
 <body>
   <header class="site-header">
-
     <nav class="site-header__nav main-nav">
       <a class="main-nav__logo logo" href="index.html">
         <img class="logo__img" src="img/logo.svg" alt="Логотип интернет-магазина изделий ручной работы Mishka" width="86" height="35">
@@ -129,7 +128,24 @@
       </a>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+  <section class="site-modals">
+    <div class="site-modals__wrap js-modalWrap"></div>
+    <div class="site-modals__modal modal js-modalAddToCart">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__content add-to-card-form" action="//echo.htmlacademy.ru" method="post">
+        <fieldset class="add-to-card-form__fieldset">
+          <legend class="add-to-card-form__legend">Выберите размер:</legend>
+          <input class="visually-hidden" type="radio" name="size" value="S" id="S" checked>
+          <label class="add-to-card-form__label" for="S">S</label>
+          <input class="visually-hidden" type="radio" name="size" value="M" id="M">
+          <label class="add-to-card-form__label" for="M">M</label>
+          <input class="visually-hidden" type="radio" name="size" value=">L" id="L">
+          <label class="add-to-card-form__label" for="L">L</label>
+        </fieldset>
+        <button class="add-to-card-form__button button button--add-to-cart" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
   <script src="js/script.js"></script>
 </body>
 
