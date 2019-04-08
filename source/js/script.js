@@ -1,8 +1,7 @@
 (function () {
   "use strict";
 
-  document.querySelector(".contacts__map-img").style.cssText = "display: none;";
-  document.querySelector(".contacts__map-container").style.cssText = "height: 457px;";
+  document.querySelector(".contacts__map-img").classList.add("contacts__map-img--hidden");
 
   ymaps.ready(init);
 

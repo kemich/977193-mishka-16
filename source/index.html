@@ -49,56 +49,58 @@
     <section class="site-content__categories categories">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories__list">
-        <li class="categories__item">
+        <li class="categories__item categories__item--interior">
           <a class="categories__link" href="catalog.html">Предметы интерьера</a>
         </li>
-        <li class="categories__item">
+        <li class="categories__item categories__item--toys">
           <a class="categories__link" href="catalog.html">Детские игрушки</a>
         </li>
       </ul>
     </section>
     <section class="site-content__best-deal best-deal">
       <h2 class="best-deal__title">Товар недели</h2>
-      <ul class="best-deal__list">
-        <li class="best-deal__item product product--best-deal">
-          <a class="product__link" href="product.html">
-            <h3 class="product__title">Вязаные корзинки</h3>
-          </a>
-          <a class="product__link" href="product.html">
-            <img class="product__img" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
-          </a>
-          <p class="product__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <dl class="product__prop product-prop">
-            <dt class="product-prop__title">цвет:</dt>
-            <dd class="product-prop__descr">«Тиффани»/серый</dd>
-            <dt class="product-prop__title">диаметр:</dt>
-            <dd class="product-prop__descr">25 см</dd>
-            <dt class="product-prop__title">высота:</dt>
-            <dd class="product-prop__descr">15 см</dd>
-          </dl>
-          <b class="product__price">Цена: 990 руб.</b>
-          <a class="product__buy-link button" href="cart.html">Заказать</a>
-        </li>
-      </ul>
+      <article class="best-deal__content product product--best-deal">
+        <a class="product__link" href="product.html">
+          <h3 class="product__title">Вязаные корзинки</h3>
+        </a>
+        <a class="product__link" href="product.html">
+          <img class="product__img" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
+        </a>
+        <p class="product__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <dl class="product__prop product-prop">
+          <dt class="product-prop__title">цвет:</dt>
+          <dd class="product-prop__descr">«Тиффани»/серый</dd>
+          <dt class="product-prop__title">диаметр:</dt>
+          <dd class="product-prop__descr">25 см</dd>
+          <dt class="product-prop__title">высота:</dt>
+          <dd class="product-prop__descr">15 см</dd>
+        </dl>
+        <b class="product__price">Цена: 990 руб.</b>
+        <a class="product__buy-link button" href="cart.html">Заказать</a>
+      </article>
     </section>
     <section class="site-content__benefits benefits">
       <h2 class="benefits__title">Коротко о нас:</h2>
       <ul class="benefits__list">
-        <li class="benefits__item">Экологически чистые материалы</li>
-        <li class="benefits__item">Скандинавский стиль по российской цене</li>
-        <li class="benefits__item">Увеличивает лайки на фотографиях</li>
-        <li class="benefits__item">Связано вручную с любовью и умилением</li>
-        <li class="benefits__item">Поддержка отечественного производителя</li>
-        <li class="benefits__item">Поставляется в подарочной упаковке</li>
+        <li class="benefits__item benefits__item--green-technology">Экологически чистые материалы</li>
+        <li class="benefits__item benefits__item--scandy-style">Скандинавский стиль по российской цене</li>
+        <li class="benefits__item benefits__item--social-likes">Увеличивает лайки на фотографиях</li>
+        <li class="benefits__item benefits__item--handmade">Связано вручную с любовью и умилением</li>
+        <li class="benefits__item benefits__item--local-manufacturer">Поддержка отечественного производителя</li>
+        <li class="benefits__item benefits__item--gift-package">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="site-content__review reviews">
+    <section class="site-content__reviews reviews">
       <h2 class="reviews__title">Отзывы</h2>
-      <article class="reviews__item reviews-item">
-        <h3 class="reviews-item__author-name">Анастасия Красильникова</h3>
-        <p class="reviews-item__author-social-link">@misssssiskras</p>
-        <p class="reviews-item__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      </article>
+      <ul class="reviews__list">
+        <li class="reviews__item">
+          <article class="reviews__content review">
+            <h3 class="review__author-name">Анастасия Красильникова</h3>
+            <p class="review__author-nick-name">@misssssiskras</p>
+            <p class="review__content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          </article>
+        </li>
+      </ul>
       <div class="reviews__wrapper">
         <button class="reviews__control button button--back" type="button">
           <span class="visually-hidden">Назад</span>
@@ -122,19 +124,19 @@
   </main>
   <footer class="site-footer">
     <ul class="site-footer__socials socials">
-      <li class="socials__item">
-        <a class="socials__link" href="#" title="Мы в Instagram">
-          <img class="socials__img" src="http://placehold.it/30x30" alt="Мы в Instagram" width="30" height="30">
+      <li class="socials__item social-icon">
+        <a class="social-icon__link" href="#" title="Мы в Instagram">
+          <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Instagram" width="30" height="30">
         </a>
       </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#" title="Мы в Facebook">
-          <img class="socials__img" src="http://placehold.it/30x30" alt="Мы в Facebook" width="30" height="30">
+      <li class="socials__item social-icon">
+        <a class="social-icon__link" href="#" title="Мы в Facebook">
+          <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Facebook" width="30" height="30">
         </a>
       </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#" title="Мы в Twitter">
-          <img class="socials__img" src="http://placehold.it/30x30" alt="Мы в Twitter" width="30" height="30">
+      <li class="socials__item social-icon">
+        <a class="social-icon__link" href="#" title="Мы в Twitter">
+          <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Twitter" width="30" height="30">
         </a>
       </li>
     </ul>
