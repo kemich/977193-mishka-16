@@ -13,31 +13,55 @@
 
 <body>
   <header class="site-header">
-    <nav class="site-header__nav main-nav">
-      <a class="main-nav__logo logo">
-        <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип интернет-магазина изделий ручной работы Mishka" width="86" height="35">
-      </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__main-menu main-menu">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <a class="main-nav__search search" href="search.html">Поиск по сайту</a>
-        <a class="main-nav__cart cart" href="cart.html">Корзина: <span class="cart__qtty">пока пуста</span></a>
-        <ul class="main-nav__add-menu add-menu">
-          <li class="add-menu__item">
-            <a class="add-menu__link" href="catalog.html">Новые поступления</a>
-          </li>
-          <li class="add-menu__item">
-            <a class="add-menu__link" href="catalog.html">Распродажа</a>
-          </li>
-        </ul>
-        <a class="main-nav__delivery delivery" href="delivery.html">Бесплатная доставка по России</a>
+    <nav class="main-nav">
+      <div class="main-nav__top-container">
+        <div class="main-nav__logo">
+          <a class="logo">
+            <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип интернет-магазина изделий ручной работы Mishka" width="86" height="35">
+          </a>
+        </div>
+        <div class="main-nav__toggle-btn">
+          <button class="btn btn--hamburger js-menu-toggle" type="button">Открыть меню</button>
+        </div>
+      </div>
+      <div class="main-nav__main-container">
+        <div class="main-nav__main-menu">
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a class="link link--main-menu" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="link link--main-menu" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__search">
+          <div class="search">
+            <a class="link link--search" href="search.html">Поиск по сайту</a>
+          </div>
+        </div>
+        <div class="main-nav__cart">
+          <div class="cart">
+            <a class="link link--cart" href="cart.html">Корзина: <span class="cart__qtty">пока пуста</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav__add-container">
+        <div class="main-nav__add-menu">
+          <ul class="add-menu">
+            <li class="add-menu__item">
+              <a class="link link--add-menu" href="catalog.html">Новые поступления</a>
+            </li>
+            <li class="add-menu__item">
+              <a class="link link--add-menu" href="catalog.html">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__delivery">
+          <div class="delivery">
+            <a class="link link--delivery" href="delivery.html">Бесплатная доставка по России</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -76,7 +100,7 @@
           <dd class="product-prop__descr">15 см</dd>
         </dl>
         <b class="product__price">Цена: 990 руб.</b>
-        <a class="product__buy-link button" href="cart.html">Заказать</a>
+        <a class="product__buy-link btn" href="cart.html">Заказать</a>
       </article>
     </section>
     <section class="site-content__benefits benefits">
@@ -102,14 +126,14 @@
         </li>
       </ul>
       <div class="reviews__wrapper">
-        <button class="reviews__control button button--back" type="button">
+        <button class="reviews__control btn btn--back" type="button">
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="reviews__control button button--forward" type="button">
+        <button class="reviews__control btn btn--forward" type="button">
           <span class="visually-hidden">Вперед</span>
         </button>
       </div>
-      <a class="reviews__make-review button" href="reviews.html">Написать</a>
+      <a class="reviews__make-review btn" href="reviews.html">Написать</a>
     </section>
     <section class="site-content__contacts contacts">
       <h2 class="contacts__title">Контакты</h2>
@@ -119,7 +143,7 @@
       <div class="contacts__map-container" id="map">
         <img class="contacts__map-img" src="http://placehold.it/322x457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
       </div>
-      <a class="contacts__feedback-link button" href="feedback.html">Напишите нам</a>
+      <a class="contacts__feedback-link btn" href="feedback.html">Напишите нам</a>
     </section>
   </main>
   <footer class="site-footer">
@@ -161,7 +185,7 @@
           <input class="visually-hidden" type="radio" name="size" value=">L" id="L">
           <label class="add-to-card-form__label" for="L">L</label>
         </fieldset>
-        <button class="add-to-card-form__button button button--add-to-cart" type="submit">Добавить</button>
+        <button class="add-to-card-form__btn btn btn--add-to-cart" type="submit">Добавить</button>
       </form>
     </div>
   </section>
