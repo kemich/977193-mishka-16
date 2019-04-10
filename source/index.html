@@ -16,33 +16,37 @@
     <nav class="main-nav">
       <div class="main-nav__top-container">
         <div class="main-nav__logo">
-          <a class="logo">
-            <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип интернет-магазина изделий ручной работы Mishka" width="86" height="35">
-          </a>
+          <div class="logo">
+            <a class="logo__link">
+              <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип интернет-магазина изделий ручной работы Mishka" width="86" height="35">
+            </a>
+          </div>
         </div>
-        <div class="main-nav__toggle-btn">
-          <button class="btn btn--hamburger js-menu-toggle" type="button">Открыть меню</button>
+        <div class="main-nav__menu-toggle">
+          <div class="hamburger">
+            <button class="btn btn--hamburger js-menu-toggle" type="button">Открыть меню</button>
+          </div>
         </div>
       </div>
       <div class="main-nav__main-container">
         <div class="main-nav__main-menu">
           <ul class="main-menu">
             <li class="main-menu__item">
-              <a class="link link--main-menu" href="catalog.html">Каталог товаров</a>
+              <a class="main-menu__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-menu__item">
-              <a class="link link--main-menu" href="form.html">Вязание на заказ</a>
+              <a class="main-menu__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
         </div>
         <div class="main-nav__search">
           <div class="search">
-            <a class="link link--search" href="search.html">Поиск по сайту</a>
+            <a class="search__link" href="search.html">Поиск по сайту</a>
           </div>
         </div>
         <div class="main-nav__cart">
           <div class="cart">
-            <a class="link link--cart" href="cart.html">Корзина: <span class="cart__qtty">пока пуста</span></a>
+            <a class="cart__link" href="cart.html">Корзина: <span class="cart__qtty">пока пуста</span></a>
           </div>
         </div>
       </div>
@@ -50,16 +54,16 @@
         <div class="main-nav__add-menu">
           <ul class="add-menu">
             <li class="add-menu__item">
-              <a class="link link--add-menu" href="catalog.html">Новые поступления</a>
+              <a class="add-menu__link" href="catalog.html">Новые поступления</a>
             </li>
             <li class="add-menu__item">
-              <a class="link link--add-menu" href="catalog.html">Распродажа</a>
+              <a class="add-menu__link" href="catalog.html">Распродажа</a>
             </li>
           </ul>
         </div>
         <div class="main-nav__delivery">
           <div class="delivery">
-            <a class="link link--delivery" href="delivery.html">Бесплатная доставка по России</a>
+            <a class="add-menu__link" href="delivery.html">Бесплатная доставка по России</a>
           </div>
         </div>
       </div>
@@ -147,28 +151,38 @@
     </section>
   </main>
   <footer class="site-footer">
-    <ul class="site-footer__socials socials">
-      <li class="socials__item social-icon">
-        <a class="social-icon__link" href="#" title="Мы в Instagram">
-          <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Instagram" width="30" height="30">
+    <div class="site-footer__socials">
+      <ul class="socials">
+        <li class="socials__item">
+          <div class="social-icon">
+            <a class="social-icon__link" href="#" title="Мы в Instagram">
+              <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Instagram" width="30" height="30">
+            </a>
+          </div>
+        </li>
+        <li class="socials__item">
+          <div class="social-icon">
+            <a class="social-icon__link" href="#" title="Мы в Facebook">
+              <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Facebook" width="30" height="30">
+            </a>
+          </div>
+        </li>
+        <li class="socials__item">
+          <div class="social-icon">
+            <a class="social-icon__link" href="#" title="Мы в Twitter">
+              <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Twitter" width="30" height="30">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="site-footer__copyright">
+      <div class="copyright">
+        Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="copyright__img" src="img/icons/htmlacademy.svg" alt="HTML Academy © 2019" width="60" height="60">
         </a>
-      </li>
-      <li class="socials__item social-icon">
-        <a class="social-icon__link" href="#" title="Мы в Facebook">
-          <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Facebook" width="30" height="30">
-        </a>
-      </li>
-      <li class="socials__item social-icon">
-        <a class="social-icon__link" href="#" title="Мы в Twitter">
-          <img class="social-icon__img" src="http://placehold.it/30x30" alt="Мы в Twitter" width="30" height="30">
-        </a>
-      </li>
-    </ul>
-    <div class="site-footer__copyright copyright">
-      Разработано
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <img class="copyright__img" src="img/icons/htmlacademy.svg" alt="HTML Academy © 2019" width="60" height="60">
-      </a>
+      </div>
     </div>
   </footer>
   <section class="site-modals">
