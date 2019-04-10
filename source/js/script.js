@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  document.querySelector(".contacts__map-img").classList.add("contacts__map-img--hidden");
+  document.querySelector(".map__img").classList.add("map__img--hidden");
 
   ymaps.ready(init);
 
