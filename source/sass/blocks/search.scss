@@ -1,0 +1,27 @@
+.search {
+  min-height: 80px;
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+
+  &__link {
+    padding: 28px 40px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

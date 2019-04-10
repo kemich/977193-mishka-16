@@ -1,0 +1,30 @@
+.add-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__link {
+    padding: 10px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+  transition: opacity 0.3s;
+
+  &__img {
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
