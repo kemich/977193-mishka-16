@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+
+  font-family: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  font-family: "OpenSans", "Arial", sans-serif;
+
+}
