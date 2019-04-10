@@ -63,7 +63,7 @@
         </div>
         <div class="main-nav__delivery">
           <div class="delivery">
-            <a class="add-menu__link" href="delivery.html">Бесплатная доставка по России</a>
+            <a class="delivery__link" href="delivery.html">Бесплатная доставка по России</a>
           </div>
         </div>
       </div>
@@ -71,12 +71,16 @@
   </header>
   <main class="site-content">
     <h1 class="visually-hidden">Наши услуги</h1>
-    <section class="site-content__knitting knitting">
-      <h2 class="visually-hidden">Вязание на заказ</h2>
-      <form class="knitting__form knitting-form" action="//echo.htmlacademy.ru" method="post">
-        <button class="knitting-form__button button" type="submit">Отправить заказ</button>
-      </form>
-    </section>
+    <div class="site-content__knitting">
+      <section class="knitting">
+        <h2 class="visually-hidden">Вязание на заказ</h2>
+        <div class="knitting__form">
+          <form class="knitting-form" action="//echo.htmlacademy.ru" method="post">
+            <button class="knitting-form__btn btn" type="submit">Отправить заказ</button>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="site-footer__socials">
