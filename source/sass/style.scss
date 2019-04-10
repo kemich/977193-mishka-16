@@ -1,5 +1,36 @@
 @import "normalize";
-
-body {
-  background: blue;
-}
+@import "variables";
+@import "mixins";
+@import "base";
+@import "visually-hidden";
+@import "btn";
+@import "logo";
+@import "menu-toggle";
+@import "main-menu";
+@import "search";
+@import "cart";
+@import "add-menu";
+@import "delivery";
+@import "main-nav";
+@import "site-header";
+@import "banner";
+@import "categories";
+@import "best-deal";
+@import "benefits";
+@import "review";
+@import "reviews";
+@import "contacts";
+@import "map";
+@import "product-card";
+@import "products";
+@import "creation-card";
+@import "knitting-form";
+@import "knitting";
+@import "site-content";
+@import "socials";
+@import "social-icon";
+@import "copyright";
+@import "site-footer";
+@import "add-to-card-form";
+@import "modal";
+@import "site-modals";
