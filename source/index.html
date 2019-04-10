@@ -186,21 +186,25 @@
     </div>
   </footer>
   <section class="site-modals">
-    <div class="site-modals__wrap js-modalWrap"></div>
-    <div class="site-modals__modal modal js-modalAddToCart">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__content add-to-card-form" action="//echo.htmlacademy.ru" method="post">
-        <fieldset class="add-to-card-form__fieldset">
-          <legend class="add-to-card-form__legend">Выберите размер:</legend>
-          <input class="visually-hidden" type="radio" name="size" value="S" id="S" checked>
-          <label class="add-to-card-form__label" for="S">S</label>
-          <input class="visually-hidden" type="radio" name="size" value="M" id="M">
-          <label class="add-to-card-form__label" for="M">M</label>
-          <input class="visually-hidden" type="radio" name="size" value=">L" id="L">
-          <label class="add-to-card-form__label" for="L">L</label>
-        </fieldset>
-        <button class="add-to-card-form__btn btn btn--add-to-cart" type="submit">Добавить</button>
-      </form>
+    <div class="modal-bg js-modal-bg"></div>
+    <div class="site-modals__modal">
+      <div class="modal js-modal-add-to-cart">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <div class="modal__content">
+          <form class="add-to-card-form" action="//echo.htmlacademy.ru" method="post">
+            <fieldset class="add-to-card-form__fieldset">
+              <legend class="add-to-card-form__legend">Выберите размер:</legend>
+              <input class="visually-hidden" type="radio" name="size" value="S" id="S" checked>
+              <label class="add-to-card-form__label" for="S">S</label>
+              <input class="visually-hidden" type="radio" name="size" value="M" id="M">
+              <label class="add-to-card-form__label" for="M">M</label>
+              <input class="visually-hidden" type="radio" name="size" value=">L" id="L">
+              <label class="add-to-card-form__label" for="L">L</label>
+            </fieldset>
+            <button class="add-to-card-form__btn btn btn--add-to-cart" type="submit">Добавить</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=2b74af19-0f89-4574-a6d0-619d8ce325cf&lang=ru_RU" type="text/javascript"></script>
