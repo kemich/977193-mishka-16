@@ -37,3 +37,22 @@
       .add(myPlacemark);
   }
 }());
+(function () {
+  "use strict";
+
+  var menuToggle, menuDropdown;
+
+  menuToggle = document.querySelector(".js-menu-toggle");
+  menuDropdown = document.querySelector(".js-menu-dropdown");
+
+  menuToggle.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (menuToggle.classList.contains("menu-toggle--open")) {
+      menuDropdown.classList.add("main-nav__main-container--hidden");
+      menuToggle.classList.remove("menu-toggle--open");
+    } else {
+      menuToggle.classList.add("menu-toggle--open");
+      menuDropdown.classList.remove("main-nav__main-container--hidden");
+    }
+  }, false);
+}());

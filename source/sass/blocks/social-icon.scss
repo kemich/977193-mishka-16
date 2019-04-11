@@ -1,0 +1,19 @@
+.social-icon {
+  &__link {
+    display: inline-block;
+    transition: opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__img {
+    vertical-align: middle;
+  }
+}

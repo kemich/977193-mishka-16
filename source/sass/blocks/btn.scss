@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  min-width: 260px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  padding: 15px;
+  color: #444444;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    border-color: #444444;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #444444;
+    background-color: #444444;
+  }
+}

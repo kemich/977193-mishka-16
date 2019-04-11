@@ -1,0 +1,9 @@
+.map {
+  height: 457px;
+
+  &__img {
+    &--hidden {
+      display: none;
+    }
+  }
+}
