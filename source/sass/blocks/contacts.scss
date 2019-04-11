@@ -1,0 +1,40 @@
+.contacts {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+
+  &__title {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__list {}
+
+  &__item-title {
+
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  &__item-val {
+    margin: 0;
+  }
+
+  &__email {
+    color: #444444;
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__map {}
+
+  &__feedback-btn {}
+}

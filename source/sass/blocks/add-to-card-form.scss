@@ -1,1 +1,50 @@
+.add-to-card-form {
+  &__fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 30px;
 
+  }
+
+  &__legend {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    color: #444444;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 82px;
+    height: 52px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 18px;
+    border: 2px solid rgba(68, 68, 68, 0.1);
+    background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+
+    &:active {
+      border-color: rgb(98, 209, 186);
+    }
+
+  }
+
+  &__radio:checked + .add-to-card-form__label {
+    border-color: rgb(98, 209, 186);
+  }
+
+  &__btn {}
+}

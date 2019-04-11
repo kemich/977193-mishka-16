@@ -1,0 +1,63 @@
+.categories {
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 27px 120px 27px 30px;
+    min-height: 100px;
+    box-sizing: border-box;
+    background-color: #63d1bb;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #59d5bc;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__item {
+
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+
+    &--interior {
+      .categories__link {
+        background-color: #63d1bb;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #59d5bc;
+        }
+      }
+    }
+
+    &--toys {
+      .categories__link {
+        background-color: #56c3b2;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #46c1ae;
+        }
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}

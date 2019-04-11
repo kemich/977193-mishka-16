@@ -12,6 +12,7 @@
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
 
   &:hover,
@@ -25,5 +26,25 @@
     color: rgba(255, 255, 255, 0.3);
     border-color: #444444;
     background-color: #444444;
+  }
+
+  &--add-to-cart {
+    background-color: #63d1bb;
+    border-color: #63d1bb;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+      border-color: #59d5bc;
+      color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border-color: #444444;
+      background-color: #59d5bc;
+      border-color: #59d5bc;
+    }
   }
 }

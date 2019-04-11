@@ -1,0 +1,30 @@
+.site-modals {
+  &__bg {
+    display: none;
+
+    &--active {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #ffffff;
+      opacity: 0.9;
+    }
+  }
+
+  &__modal {
+    display: none;
+    position: fixed;
+    width: 320px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &--active {
+      display: block;
+    }
+  }
+}

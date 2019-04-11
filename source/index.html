@@ -148,8 +148,16 @@
     <div class="site-content__contacts">
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <a class="contacts__field" href="mailto:info@mimimishkashop.ru">e-mail: info@mimimishkashop.ru</a>
-        <address class="contacts__field">адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+        <dl class="contacts__list">
+          <dt class="contacts__item-title">e-mail</dt>
+          <dd class="contacts__item-val">
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </dd>
+          <dt class="contacts__item-title">адрес</dt>
+          <dd class="contacts__item-val">
+            <address class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</address>
+          </dd>
+        </dl>
         <div class="contacts__map">
           <div class="map" id="map">
             <img class="map__img" src="http://placehold.it/322x457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101" width="322" height="457">
@@ -195,20 +203,22 @@
     </div>
   </footer>
   <section class="site-modals">
-    <div class="modal-bg js-modal-bg"></div>
-    <div class="site-modals__modal">
-      <div class="modal js-modal-add-to-cart">
+    <div class="site-modals__bg site-modals__bg--active js-modal-bg"></div>
+    <div class="site-modals__modal site-modals__modal--active js-modal-add-to-cart">
+      <div class="modal">
         <h2 class="modal__title">Добавить в корзину</h2>
         <div class="modal__content">
           <form class="add-to-card-form" action="//echo.htmlacademy.ru" method="post">
             <fieldset class="add-to-card-form__fieldset">
               <legend class="add-to-card-form__legend">Выберите размер:</legend>
-              <input class="visually-hidden" type="radio" name="size" value="S" id="S" checked>
-              <label class="add-to-card-form__label" for="S">S</label>
-              <input class="visually-hidden" type="radio" name="size" value="M" id="M">
-              <label class="add-to-card-form__label" for="M">M</label>
-              <input class="visually-hidden" type="radio" name="size" value=">L" id="L">
-              <label class="add-to-card-form__label" for="L">L</label>
+              <div class="add-to-card-form__container">
+                <input class="add-to-card-form__radio visually-hidden" type="radio" name="size" value="S" id="S" checked>
+                <label class="add-to-card-form__label" for="S">S</label>
+                <input class="add-to-card-form__radio visually-hidden" type="radio" name="size" value="M" id="M">
+                <label class="add-to-card-form__label" for="M">M</label>
+                <input class="add-to-card-form__radio visually-hidden" type="radio" name="size" value=">L" id="L">
+                <label class="add-to-card-form__label" for="L">L</label>
+              </div>
             </fieldset>
             <button class="add-to-card-form__btn btn btn--add-to-cart" type="submit">Добавить</button>
           </form>

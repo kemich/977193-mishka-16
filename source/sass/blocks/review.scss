@@ -1,0 +1,19 @@
+.review {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+
+  &__author-name {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__author-nick-name {
+    font-size: 17px;
+  }
+
+  &__content {}
+}
