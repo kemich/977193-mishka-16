@@ -20,13 +20,13 @@
             <img class="logo__img" src="http://placehold.it/86x35" alt="Логотип интернет-магазина изделий ручной работы Mishka" width="86" height="35">
           </a>
         </div>
-        <div class="main-nav__menu-toggle">
-          <button class="menu-toggle js-menu-toggle" type="button">
+        <div class="main-nav__menu-toggle js-menu-toggle">
+          <button class="menu-toggle" type="button">
             <span class="menu-toggle__icon">Открыть меню</span>
           </button>
         </div>
       </div>
-      <div class="main-nav__main-container main-nav__main-container--hidden js-menu-dropdown">
+      <div class="main-nav__main-container js-menu-dropdown">
         <div class="main-nav__main-menu">
           <ul class="main-menu">
             <li class="main-menu__item">
@@ -88,30 +88,26 @@
       </section>
     </div>
     <div class="site-content__best-deal">
-      <section class="best-deal">
-        <h2 class="best-deal__title">Товар недели</h2>
-        <div class="best-deal__content">
-          <article class="product-card product-card--best-deal">
-            <a class="product-card__link" href="product.html">
-              <h3 class="product-card__title">Вязаные корзинки</h3>
-            </a>
-            <a class="product-card__link" href="product.html">
-              <img class="product-card__img" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
-            </a>
-            <p class="product-card__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            <dl class="product-card__prop-list">
-              <dt class="product-card__prop-title">цвет:</dt>
-              <dd class="product-card__prop-val">«Тиффани»/серый</dd>
-              <dt class="product-card__prop-title">диаметр:</dt>
-              <dd class="product-card__prop-val">25 см</dd>
-              <dt class="product-card__prop-title">высота:</dt>
-              <dd class="product-card__prop-val">15 см</dd>
-            </dl>
-            <p class="product-card__price">Цена: 990 руб.</p>
-            <a class="product-card__buy-link btn" href="cart.html">Заказать</a>
-          </article>
-        </div>
-      </section>
+      <article class="product-card product-card--best-deal">
+        <h3 class="product-card__title">
+          <a class="product-card__link" href="product.html">
+            Вязаные корзинки</a>
+        </h3>
+        <p class="product-card__tag">Товар недели</p>
+        <img class="product-card__img" src="http://placehold.it/260x315" alt="Вязаные корзинки" width="260" height="315">
+
+        <p class="product-card__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <dl class="product-card__prop-list">
+          <dt class="product-card__prop-title">цвет</dt>
+          <dd class="product-card__prop-val">«Тиффани»/серый</dd>
+          <dt class="product-card__prop-title">диаметр</dt>
+          <dd class="product-card__prop-val">25 см</dd>
+          <dt class="product-card__prop-title">высота</dt>
+          <dd class="product-card__prop-val">15 см</dd>
+        </dl>
+        <p class="product-card__price">Цена: 990 руб.</p>
+        <a class="product-card__buy-link btn js-modal-add-to-cart-open" href="cart.html">Заказать</a>
+      </article>
     </div>
     <div class="site-content__benefits">
       <section class="benefits">
@@ -139,8 +135,18 @@
           </li>
         </ul>
         <div class="reviews__controls">
-          <button class="reviews__control-btn btn btn--back" type="button"><span class="visually-hidden">Назад</span></button>
-          <button class="reviews__control-btn btn btn--forward" type="button"><span class="visually-hidden">Вперед</span></button>
+          <button class="reviews__control-btn btn btn--light js-review-prev" type="button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 " />
+            </svg>
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="reviews__control-btn btn btn--light js-review-next" type="button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 " />
+            </svg>
+            <span class="visually-hidden">Вперед</span>
+          </button>
         </div>
         <a class="reviews__create-new-btn btn" href="reviews.html">Написать</a>
       </section>
@@ -203,8 +209,8 @@
     </div>
   </footer>
   <section class="site-modals">
-    <div class="site-modals__bg site-modals__bg--active js-modal-bg"></div>
-    <div class="site-modals__modal site-modals__modal--active js-modal-add-to-cart">
+    <div class="site-modals__bg js-modal-bg"></div>
+    <div class="site-modals__modal js-modal-add-to-cart">
       <div class="modal">
         <h2 class="modal__title">Добавить в корзину</h2>
         <div class="modal__content">

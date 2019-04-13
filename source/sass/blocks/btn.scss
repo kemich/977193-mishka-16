@@ -1,16 +1,17 @@
 .btn {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   text-decoration: none;
   min-width: 260px;
+  min-height: 52px;
   border: 2px solid #444444;
   background-color: #ffffff;
-  padding: 15px;
   color: #444444;
-  font-family: "Open Sans";
   font-size: 18px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 52px;
   text-transform: uppercase;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
@@ -42,9 +43,52 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
-      border-color: #444444;
       background-color: #59d5bc;
       border-color: #59d5bc;
+    }
+  }
+
+  &--light {
+    min-width: 130px;
+    border: 1px solid rgb(236, 236, 236);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+      border-color: rgb(236, 236, 236);
+      color: #444444;
+    }
+
+    @include link;
+
+  }
+
+  &--buy {
+    min-width: 20px;
+    min-height: 20px;
+    border: none;
+    background-color: transparent;
+
+    & path {
+      fill: #e4e4e6;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+
+      & path {
+        fill: rgb(99, 209, 187);
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+
+      & path {
+        fill: rgba(99, 209, 187, 0.3);
+      }
     }
   }
 }

@@ -1,27 +1,24 @@
 .benefits {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
   &__title {
-    color: #000000;
-    font-family: "Open Sans";
     font-size: 25px;
-    font-weight: 700;
     line-height: 30px;
     margin: 30px;
   }
 
   &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    @include list-reset;
     display: flex;
     flex-direction: column;
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
     margin: 0 30px 30px 30px;
 
     &::before {
@@ -29,7 +26,8 @@
       height: 40px;
       content: "";
       background-color: #63d1bb;
-      display: block;
+      background-image: url(http://placehold.it/40x40);
+      background-repeat: no-repeat;
       margin-bottom: 20px;
 
     }

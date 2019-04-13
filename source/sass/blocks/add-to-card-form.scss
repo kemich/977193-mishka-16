@@ -1,4 +1,14 @@
 .add-to-card-form {
+  display: flex;
+  flex-direction: column;
+
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: #ffffff;
+
+
   &__fieldset {
     border: none;
     padding: 0;
@@ -17,19 +27,18 @@
   }
 
   &__label {
-    color: #444444;
     font-size: 17px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 52px;
     text-transform: uppercase;
     cursor: pointer;
     width: 82px;
     height: 52px;
     box-sizing: border-box;
     text-align: center;
-    padding: 18px;
     border: 2px solid rgba(68, 68, 68, 0.1);
     background-color: #ffffff;
+    transition: border-color 0.3s;
 
     &:hover,
     &:focus {
