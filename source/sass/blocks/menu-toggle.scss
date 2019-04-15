@@ -6,6 +6,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
+
   &__icon {
     display: block;
     width: 100%;
@@ -17,6 +18,7 @@
 
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
+
     &::before,
     &::after {
       content: "";
@@ -29,27 +31,33 @@
 
       transition-timing-function: ease-in-out;
       transition-duration: 0.4s;
-}
+    }
+
     &::before {
       transform: translate(0, -6px);
-}
+    }
+
     &::after {
       transform: translate(0, 4px);
-}
-}
+    }
+  }
+
   &--open {
     .menu-toggle__icon {
       background: transparent;
+
       &::before,
       &::after {
         width: 130%;
-}
+      }
+
       &::before {
         transform: translate(-4px, 0) rotate(45deg);
-}
+      }
+
       &::after {
         transform: translate(-4px, -2px) rotate(-45deg);
-}
-}
-}
+      }
+    }
+  }
 }

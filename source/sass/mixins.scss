@@ -1,41 +1,41 @@
-  @mixin link {
-    color: inherit;
-    text-decoration: none;
+@mixin link {
+  color: inherit;
+  text-decoration: none;
 
-    transition: opacity 0.3s;
+  transition: opacity 0.3s;
 
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
-  @mixin list-reset {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
+  &:active {
+    opacity: 0.3;
   }
+}
 
-  @mixin mob-menu-item {
-    min-height: 80px;
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
 
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    color: #000000;
+  list-style: none;
+}
 
-    background-color: #ffffff;
-    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+@mixin mob-menu-item {
+  min-height: 80px;
 
-    a {
-      display: block;
-      padding: 28px 40px 28px 76px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
 
-      @include link;
-    }
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  a {
+    display: block;
+    padding: 28px 40px 28px 76px;
+
+    @include link;
   }
+}

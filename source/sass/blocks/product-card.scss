@@ -45,6 +45,7 @@
   &__prop-list {
     display: flex;
     flex-wrap: wrap;
+
     @include list-reset;
     margin: 0 0 20px;
   }
@@ -112,14 +113,12 @@
     & .product-card__title {
       order: -5;
 
+      margin: 0 0 10px;
+
       font-weight: 700;
       font-size: 25px;
       line-height: 30px;
       color: rgb(0, 0, 0);
-    }
-
-    & .product-card__title {
-      margin: 0 0 10px;
     }
 
     & .product-card__tag {
