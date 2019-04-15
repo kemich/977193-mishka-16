@@ -1,6 +1,7 @@
 .add-menu {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
 
   &__item {

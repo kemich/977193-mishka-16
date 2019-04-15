@@ -3,8 +3,6 @@
   if (document.querySelector(".map") != undefined) {
     document.querySelector(".map__img").classList.add("map__img--hidden");
 
-    ymaps.ready(init);
-
     var myMap, myPlacemark;
 
     function init() {
@@ -26,7 +24,7 @@
         // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
         // Своё изображение иконки метки.
-        iconImageHref: 'http://placehold.it/70x100',
+        iconImageHref: 'img/icon-map-pin.svg',
         // Размеры метки.
         iconImageSize: [70, 100],
         // Смещение левого верхнего угла иконки относительно
@@ -36,6 +34,7 @@
       myMap.geoObjects
         .add(myPlacemark);
     }
+    ymaps.ready(init);
   }
 }());
 (function () {
@@ -63,20 +62,23 @@
 
 (function () {
   "use strict";
+  if (document.querySelector(".js-modal-add-to-cart") != undefined) {
+    var modalBg, modalAddToCart, modalAddToCartOpen, i;
+    modalAddToCartOpen = document.querySelectorAll(".js-modal-add-to-cart-open");
+    modalBg = document.querySelector(".js-modal-bg");
+    modalAddToCart = document.querySelector(".js-modal-add-to-cart");
+    for (i = 0; i <= modalAddToCartOpen.length - 1; i++) {
+      modalAddToCartOpen[i].addEventListener("click", function (event) {
+        event.preventDefault();
+        modalBg.classList.add("site-modals__bg--active");
+        modalAddToCart.classList.add("site-modals__modal--active");
+      }, false);
+    }
 
-  var modalBg, modalAddToCart, modalAddToCartOpen;
-  modalAddToCartOpen = document.querySelector(".js-modal-add-to-cart-open");
-  modalBg = document.querySelector(".js-modal-bg");
-  modalAddToCart = document.querySelector(".js-modal-add-to-cart");
-
-  modalAddToCartOpen.addEventListener("click", function (event) {
-    event.preventDefault();
-    modalBg.classList.add("site-modals__bg--active");
-    modalAddToCart.classList.add("site-modals__modal--active");
-  }, false);
-  modalBg.addEventListener("click", function (event) {
-    event.preventDefault();
-    modalAddToCart.classList.remove("site-modals__modal--active");
-    modalBg.classList.remove("site-modals__bg--active");
-  }, false);
+    modalBg.addEventListener("click", function (event) {
+      event.preventDefault();
+      modalAddToCart.classList.remove("site-modals__modal--active");
+      modalBg.classList.remove("site-modals__bg--active");
+    }, false);
+  }
 }());

@@ -3,18 +3,18 @@
   flex-direction: column;
 
   &__title {
-    color: rgb(0, 0, 0);
-    font-size: 27px;
-    font-weight: 700;
-    line-height: 30px;
-    min-height: 178px;
-    background-color: #f1f1f1;
-
-    text-align: center;
-    padding: 75px 30px;
-    margin: 0 0 30px;
     box-sizing: border-box;
+    min-height: 178px;
+    margin: 0 0 30px;
+    padding: 75px 30px;
 
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+    background-color: #f1f1f1;
   }
 
   &__products {
@@ -27,11 +27,51 @@
     margin: 0 30px 30px;
   }
 
+  &__banner {
+    margin: 0;
+  }
+
   &__categories {
     margin: 0;
   }
 
   &__best-deal {
+    margin: 0;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 6px;
+
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+  }
+
+  &__benefits {
+    margin: 0;
+  }
+
+  &__reviews {
+    margin: 0;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 6px;
+
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+  }
+
+  &__contacts {
     margin: 0;
   }
 }

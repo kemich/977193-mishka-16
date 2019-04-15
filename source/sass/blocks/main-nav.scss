@@ -1,57 +1,42 @@
 .main-nav {
-  display: flex;
-  flex-direction: column;
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   &__top-container {
     position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
-    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
-  }
 
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
   &__main-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
-
+    width: 100%;
     &--hidden {
       display: none;
-    }
-
+}
     &--js--true {
       position: absolute;
       top: 80px;
       left: 0;
-    }
-  }
-
+}
+}
   &__add-container {
     display: none;
-  }
-
-  &__logo {}
-
+}
   &__menu-toggle {
     display: none;
-
     &--js--true {
-      display: block;
       position: absolute;
       top: 25px;
       right: 25px;
-    }
-  }
 
-  &__main-menu {}
-
-  &__search {}
-
-  &__cart {}
-
-  &__add-menu {}
-
-  &__delivery {}
+      display: block;
+}
+}
 }

@@ -2,61 +2,81 @@
   &__list {
     display: flex;
     flex-direction: column;
+
     @include list-reset;
   }
 
   &__item {
-
-    color: #ffffff;
-    font-size: 19px;
     font-weight: 700;
+    font-size: 19px;
     line-height: 24px;
+    color: rgb(255, 255, 255);
 
-    &--interior {
+    background-color: rgb(99, 209, 187);
+
+    &:nth-child(2n-1) {
       .categories__link {
-        background-color: #63d1bb;
+        background-color: rgb(99, 209, 187);
 
         &:hover,
         &:focus,
         &:active {
-          background-color: #59d5bc;
+          background-color: rgb(89, 213, 188);
         }
       }
     }
 
-    &--toys {
+    &:nth-child(2n) {
       .categories__link {
-        background-color: #56c3b2;
+        background-color: rgb(86, 195, 178);
 
         &:hover,
         &:focus,
         &:active {
-          background-color: #46c1ae;
+          background-color: rgb(70, 193, 174);
         }
       }
     }
   }
 
   &__link {
-    @include link;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 140px 20px 30px;
-    min-height: 100px;
-    background-color: #63d1bb;
     box-sizing: border-box;
+    min-height: 100px;
+    padding: 20px 30px;
+
+    color: inherit;
+    text-decoration: none;
+
     transition: color 0.3s, background-color 0.3s;
 
+    & svg {
+      flex: none;
+      order: 1;
+      width: 60px;
+      height: 60px;
+      margin-left: 30px;
+    }
+
+    & path {
+      fill: rgba(20, 144, 128, 0.5);
+    }
+
     &:hover,
-    &:focus,
-    &:active {
-      opacity: 1;
-      background-color: #59d5bc;
+    &:focus {
+      & path {
+        fill: rgba(20, 144, 128, 0.7);
+      }
     }
 
     &:active {
-      opacity: 1;
       color: rgba(255, 255, 255, 0.3);
+
+      & path {
+        fill: rgba(20, 144, 128, 0.3);
+      }
     }
   }
 }

@@ -1,26 +1,31 @@
 .contacts {
-  color: rgb(68, 68, 68);
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 30px;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
 
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: rgb(68, 68, 68);
+
   &__title {
-    color: #000000;
-    font-size: 18px;
-    font-weight: 700;
     margin: 0 0 30px;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
   }
 
   &__list {
-    @include list-reset;
-    margin: 0 0 30px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 0 30px;
+
+    @include list-reset;
   }
 
   &__item-title {
-    width: 35%;
+    width: 30%;
     margin: 0 0 30px;
 
     &::after {
@@ -33,7 +38,7 @@
   }
 
   &__item-val {
-    width: 65%;
+    width: 70%;
     margin: 0 0 30px;
 
     &:last-child {
@@ -42,9 +47,23 @@
   }
 
   &__email {
-    color: #444444;
+    color: rgb(68, 68, 68);
     text-decoration: none;
+
     border-bottom: 1px solid #62d1ba;
+
+    transition: color 0.3s, opacity 0.3s;
+
+    &:hover,
+    &:focus {
+      color: rgb(70, 193, 174);
+    }
+
+    &:active {
+      color: rgb(70, 193, 174);
+
+      opacity: 0.3;
+    }
   }
 
   &__address {
@@ -54,6 +73,4 @@
   &__map {
     margin: 0 -30px 30px;
   }
-
-  &__feedback-btn {}
 }

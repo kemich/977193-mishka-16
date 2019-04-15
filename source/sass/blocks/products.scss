@@ -1,13 +1,12 @@
 .products {
-
   &__list {
-    @include list-reset;
     display: flex;
     flex-direction: column;
+
+    @include list-reset;
   }
 
   &__item {
     margin: 0 30px 30px;
   }
-
 }

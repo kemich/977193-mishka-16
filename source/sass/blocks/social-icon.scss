@@ -1,9 +1,36 @@
 .social-icon {
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+
+    transition: opacity 0.3s;
+
     @include link;
   }
 
-  &__img {
+  & svg {
     vertical-align: middle;
+  }
+
+  & path {
+    fill: #231f20;
+  }
+
+  &:hover,
+  &:focus {
+    & path {
+      fill: rgb(70, 193, 174);
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    & path {
+      fill: rgb(70, 193, 174);
+    }
   }
 }

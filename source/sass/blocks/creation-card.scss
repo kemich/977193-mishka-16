@@ -1,38 +1,73 @@
 .creation-card {
   display: flex;
   flex-direction: column;
-  color: rgb(68, 68, 68);
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 24px;
-  border: 1px solid rgb(236, 236, 236);
-  background-color: rgb(255, 255, 255);
   margin: 0;
+  padding: 30px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: rgb(68, 68, 68);
+
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(236, 236, 236);
 
   &__title {
+    display: flex;
     order: -2;
-    color: rgb(0, 0, 0);
-    font-size: 17px;
+    min-height: 40px;
+    margin: 0 0 30px;
+
     font-weight: 700;
-    margin: 30px;
-    padding-left: 60px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+
+    & svg {
+      width: 40px;
+      padding-right: 20px;
+
+      & path {
+        fill: #62d1ba;
+      }
+    }
   }
 
   &__descr {
-    margin: 0 30px 30px;
+    margin: 0 0 30px;
   }
 
   &__video {
+    position: relative;
+
     order: -1;
-    margin: 0 0 30px;
-    min-height: 150px;
+    height: 46.87vw;
+    margin: 0 -30px 30px;
+
     background-color: #f1f1f1;
     background-image: url(../img/video-mobile@1x.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
   }
 
   &__buy-link {
-    margin: 0 30px 30px;
     min-width: auto;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }

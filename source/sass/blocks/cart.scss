@@ -1,3 +1,22 @@
 .cart {
+  position: relative;
+
   @include mob-menu-item;
+  &__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 38px;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    opacity: 0.2;
+}
 }
